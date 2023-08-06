@@ -1,0 +1,26 @@
+---
+---
+
+<div role="region" aria-label="Skip to main content">
+  <a class="skipToContent" href="#skipToContent_fallback">Skip to main content</a>
+</div>
+<style>
+  :root {
+    --ifm-background-surface-color: var(--ifm-color-content-inverse);
+  }
+</style>
+<style>
+  .skipToContent {
+    background-color: var(--ifm-background-surface-color);
+    color: var(--ifm-color-emphasis-900);
+    left: 100%;
+    padding: calc(var(--ifm-global-spacing) / 2) var(--ifm-global-spacing);
+    position: fixed;
+    top: 1rem;
+    z-index: calc(var(--ifm-z-index-fixed) + 1);
+  }
+  .skipToContent:focus {
+    box-shadow: var(--ifm-global-shadow-md);
+    left: 1rem;
+  }
+</style>
